@@ -1,6 +1,7 @@
 # TODO
 
-## DONE
+## DONE:
+
 + documentation
 + test definitions
 + kotlin project, gradle
@@ -11,8 +12,8 @@
 
 + tests for app, [docs/tests.md]
 
-+ shell stdin
 
-+ start without param in loop and brake for 100 steps 
- 
+  Client:
+  rock_paper_scissors/src/main/kotlin/Main.kt
+
 

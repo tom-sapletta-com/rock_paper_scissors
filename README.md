@@ -12,31 +12,63 @@ shell app that plays multiple rounds of Rock, Paper, Scissors
 
 # Getting Started
 
++ [install](DOCS/install.md)
+
 ```bash 
 git clone https://github.com/tom-sapletta-com/rock_paper_scissors.git
 cd rock_paper_scissors
 ```
 
-Example code and descriptions can be found in `/src/test/kotlin/com/johnckeyes/kotlin`.
 
 If you'd like to make changes and run all the tests...
 ```bash
 ./gradlew test
 ```
+
 Or, if you'd like to run the tests on a specific class...
 ```bash
 ./gradlew -Dtest.single=ClassToTest test
 ```
 
-## Steps:
-
-+ console application
-+ ktor
-+ gradle
-Client:
-rock_paper_scissors/src/main/kotlin/Main.kt
+## Run app
+```bash
+java -jar gradle/wrapper/gradle-wrapper.jar
+```
 
 
+```
+GameHumanBot(
+    Config(
+        cycles=100
+        bot_name: "Bot"
+    ),
+    StartGame(
+        human_name: "Tom"
+    ),  
+    Results(
+        Play(
+            PlayerAction(
+                "ROCK"
+            ),
+            PlayerAction(
+                RandomAction()
+            )
+        ),
+        Play(
+            PlayerAction(
+                "PAPER
+            ),
+            PlayerAction(
+                RandomAction()
+            )
+        ),
+        ...
+    ),
+    GameOver(
+        Results()
+    )
+)
+```
 # DOCS
 
 ## What is Kotlin?

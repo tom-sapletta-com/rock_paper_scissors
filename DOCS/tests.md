@@ -10,7 +10,6 @@ game.kt
 ## what if I start without param?
 
 
-
 ## what if I start with one param?
 
 
