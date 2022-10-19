@@ -20,3 +20,6 @@ Alternatively, on macOS you can install the compiler via [Homebrew](https://brew
 If you use [Snap](https://snapcraft.io/) on Ubuntu 16.04 or later, you can install the compiler from the command line:
 
     sudo snap install --classic kotlin
+
+Try adding program arguments via Run/Debug configuration.
+Learn more about running applications: [https://www.jetbrains.com/help/idea/running-applications.html]

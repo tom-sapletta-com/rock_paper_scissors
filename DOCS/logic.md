@@ -34,7 +34,7 @@ command in terminal console
 + LOSE
 
 
-## Game Over
+## game Over
 
 should calculate at least the number of wins for each player and the number of draws.
 

@@ -19,20 +19,15 @@ git clone https://github.com/tom-sapletta-com/rock_paper_scissors.git
 cd rock_paper_scissors
 ```
 
-
+## Test
 If you'd like to make changes and run all the tests...
 ```bash
 ./gradlew test
 ```
 
-Or, if you'd like to run the tests on a specific class...
-```bash
-./gradlew -Dtest.single=ClassToTest test
-```
-
 ## Run app
 ```bash
-java -jar gradle/wrapper/gradle-wrapper.jar
+./gradlew run
 ```
 
 
@@ -56,7 +51,7 @@ GameHumanBot(
         ),
         Play(
             PlayerAction(
-                "PAPER
+                "ROCK"
             ),
             PlayerAction(
                 RandomAction()
