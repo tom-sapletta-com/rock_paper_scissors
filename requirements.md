@@ -6,7 +6,8 @@ have high test coverage and adhere to common clean code rules.
 
 ## Minimal functional requirements:
 
-+ One player should always play randomly, the other should always choose rock. No user interaction should be required (i.e. no reading from stdin and waiting for a user interaction).
++ One player should always play randomly, the other should always choose rock. 
++ No user interaction should be required (i.e. no reading from stdin and waiting for a user interaction).
 
 + The application should play 100 rounds of the game.
 
