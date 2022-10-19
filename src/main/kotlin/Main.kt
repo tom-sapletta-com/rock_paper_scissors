@@ -1,16 +1,16 @@
 //import java.util.ArrayList
 import java.util.*
 
-
-val game_results = listOf("WIN", "DRAW", "LOSE")
-
 val user_actions = listOf("ROCK", "PAPER", "SCISSOR")
 
 class User(val name: String)
+
 class Action(var default: String)
+
 fun RandomIfEmpty(action: Action){
     if( action.default == "" ) action.default = user_actions.random()
 }
+
 class Play(user: User, action: Action) {
     val user: User = user
     val action: Action = action
@@ -22,11 +22,9 @@ fun HelloUsers(users: ArrayList<User>) {
     for (user in users) HelloUser(user)
 }
 
-
 fun IsDraw(firstPlayer: Play, secondPlayer: Play): Boolean {
     return firstPlayer.action.default == secondPlayer.action.default
 }
-
 
 fun GetWinner(firstPlayer: Play, secondPlayer: Play): User {
     var won: User
