@@ -7,7 +7,7 @@ class User(val name: String)
 
 class Action(var default: String)
 
-fun RandomIfEmpty(action: Action){
+fun RandomActionIfEmpty(action: Action){
     if( action.default == "" ) action.default = user_actions.random()
 }
 
@@ -46,8 +46,8 @@ fun GetWinner(firstPlayer: Play, secondPlayer: Play): User {
 
 fun Round(firstPlayer: Play, secondPlayer: Play) {
 
-    RandomIfEmpty(firstPlayer.action)
-    RandomIfEmpty(secondPlayer.action)
+    RandomActionIfEmpty(firstPlayer.action)
+    RandomActionIfEmpty(secondPlayer.action)
 
     //println("ACTIONS:")
     println(firstPlayer.user.name + ": " + firstPlayer.action.default + " vs " + secondPlayer.user.name + ": " + secondPlayer.action.default)
@@ -78,11 +78,11 @@ fun main(args: Array<String>) {
     do {
         print(i)
         print(" ")
-        i++
         Round(
             Play(User("Tom"), Action("ROCK")),
             Play(User("Bot"), Action(""))
         )
+        i++
     }
     while (i <= round_limit)
 
