@@ -3,10 +3,12 @@
 ## DONE
 + documentation
 + test definitions
++ kotlin project, gradle
 
 
 ## IN PREPARATION:
-+ kotlin project
++ a brake, about 2h ...
+
 
 + shell stdin
 + start without param in loop and brake for 100 steps 
