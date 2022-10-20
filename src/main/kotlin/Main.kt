@@ -94,12 +94,12 @@ fun main() {
 
     helloUsers(users)
 
-    val round_limit = 100
-    println("GAME with " + round_limit.toString() + " rounds")
+    val roundLimit: Int = 100
+    println("GAME with $roundLimit rounds")
 
-    var results = ArrayList<Result>(100)
+    var results = ArrayList<Result>(roundLimit)
 
-    for (i in 1..round_limit) {
+    for (i in 1..roundLimit) {
         val itr: MutableIterator<User> = users.iterator()
 
         roundWithTwoUsers(
