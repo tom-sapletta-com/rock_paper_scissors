@@ -1,4 +1,3 @@
-//import java.util.ArrayList
 import java.util.*
 
 // USER
@@ -66,7 +65,7 @@ fun printResults(results: ArrayList<Result>) {
     }
 }
 
-// GAME ROUND
+// ONE ROUND OF GAME
 
 fun roundWithTwoUsers(firstPlayer: Play, secondPlayer: Play, results: ArrayList<Result>) {
 
@@ -84,7 +83,7 @@ fun roundWithTwoUsers(firstPlayer: Play, secondPlayer: Play, results: ArrayList<
     results.add(result)
 }
 
-// GAME START
+// START GAME
 
 fun main() {
     println("::::: START GAME : Rock, Paper, Scissors ::::::")
