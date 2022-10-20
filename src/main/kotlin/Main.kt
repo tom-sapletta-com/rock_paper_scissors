@@ -47,6 +47,8 @@ fun wonUser(firstPlayer: Play, secondPlayer: Play): User {
     return won
 }
 
+// RESULT
+
 class Result(var first: String, var second: String, var result: String)
 
 fun updateWonResult(firstPlayer: Play, secondPlayer: Play, result: Result) {
@@ -56,7 +58,15 @@ fun updateWonResult(firstPlayer: Play, secondPlayer: Play, result: Result) {
     }
 }
 
-// GAME
+fun printResults(results: ArrayList<Result>) {
+    var i = 0
+    for (result in results) {
+        i++
+        println(" $i " + result.first + " " + result.second + " = " + result.result)
+    }
+}
+
+// GAME ROUND
 
 fun roundWithTwoUsers(firstPlayer: Play, secondPlayer: Play, results: ArrayList<Result>) {
 
@@ -74,13 +84,7 @@ fun roundWithTwoUsers(firstPlayer: Play, secondPlayer: Play, results: ArrayList<
     results.add(result)
 }
 
-fun printResults(results: ArrayList<Result>) {
-    var i = 0
-    for (result in results) {
-        i++
-        println(" $i " + result.first + " " + result.second + " = " + result.result)
-    }
-}
+// GAME START
 
 fun main() {
     println("::::: START GAME : Rock, Paper, Scissors ::::::")
