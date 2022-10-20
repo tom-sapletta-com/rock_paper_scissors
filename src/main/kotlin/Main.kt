@@ -1,32 +1,35 @@
 //import java.util.ArrayList
 import java.util.*
 
-val user_actions = listOf("ROCK", "PAPER", "SCISSOR")
+// USER
 
 class User(val name: String)
 
+fun helloUser(user: User) = println("Hello ${user.name} !")
+
+fun helloUsers(users: ArrayList<User>) {
+    for (user in users) helloUser(user)
+}
+
+// ACTION: "ROCK", "PAPER", "SCISSOR"
+
+val user_actions = listOf("ROCK", "PAPER", "SCISSOR")
+
 class Action(var default: String)
 
-fun RandomActionIfEmpty(action: Action){
-    if( action.default == "" ) action.default = user_actions.random()
+fun randomActionIfEmpty(action: Action) {
+    if (action.default == "") action.default = user_actions.random()
 }
 
-class Play(user: User, action: Action) {
-    val user: User = user
-    val action: Action = action
-}
+// PLAY = USER + ACTION
 
-fun HelloUser(user: User) = println("Hello ${user.name} !")
+class Play(var user: User, var action: Action)
 
-fun HelloUsers(users: ArrayList<User>) {
-    for (user in users) HelloUser(user)
-}
-
-fun IsDraw(firstPlayer: Play, secondPlayer: Play): Boolean {
+fun isDraw(firstPlayer: Play, secondPlayer: Play): Boolean {
     return firstPlayer.action.default == secondPlayer.action.default
 }
 
-fun GetWinner(firstPlayer: Play, secondPlayer: Play): User {
+fun wonUser(firstPlayer: Play, secondPlayer: Play): User {
     var won: User
 
     won = secondPlayer.user
@@ -44,47 +47,68 @@ fun GetWinner(firstPlayer: Play, secondPlayer: Play): User {
     return won
 }
 
-fun Round(firstPlayer: Play, secondPlayer: Play) {
+class Result(var first: String, var second: String, var result: String)
 
-    RandomActionIfEmpty(firstPlayer.action)
-    RandomActionIfEmpty(secondPlayer.action)
-
-    //println("ACTIONS:")
-    println(firstPlayer.user.name + ": " + firstPlayer.action.default + " vs " + secondPlayer.user.name + ": " + secondPlayer.action.default)
-
-    if(IsDraw(firstPlayer, secondPlayer)){
-        println("Draw")
-    } else {
-        var won: User = GetWinner(firstPlayer, secondPlayer)
-        println(won.name + " won")
+fun updateWonResult(firstPlayer: Play, secondPlayer: Play, result: Result) {
+    if (!isDraw(firstPlayer, secondPlayer)) {
+        val won: User = wonUser(firstPlayer, secondPlayer)
+        result.result = won.name + " won"
     }
-
 }
 
+// GAME
 
-fun main(args: Array<String>) {
-    println("GAME: Rock, Paper, Scissors ")
-    var round_limit=100
-    println("Program arguments: ${args.joinToString()}")
+fun roundWithTwoUsers(firstPlayer: Play, secondPlayer: Play, results: ArrayList<Result>) {
 
-    var users = arrayListOf(
-        User("Tom"),
-        User("Bot")
+    randomActionIfEmpty(firstPlayer.action)
+    randomActionIfEmpty(secondPlayer.action)
+
+    val result = Result(
+        firstPlayer.user.name + ": " + firstPlayer.action.default,
+        secondPlayer.user.name + ": " + secondPlayer.action.default,
+        "Draw"
     )
 
-    HelloUsers(users)
+    updateWonResult(firstPlayer, secondPlayer, result)
 
-    var i = 1
-    do {
-        print(i)
-        print(" ")
-        Round(
-            Play(User("Tom"), Action("ROCK")),
-            Play(User("Bot"), Action(""))
-        )
+    results.add(result)
+}
+
+fun printResults(results: ArrayList<Result>) {
+    var i = 0
+    for (result in results) {
         i++
+        println(" $i " + result.first + " " + result.second + " = " + result.result)
     }
-    while (i <= round_limit)
+}
 
+fun main() {
+    println("::::: START GAME : Rock, Paper, Scissors ::::::")
+
+    val round_limit = 100
+
+    println(round_limit.toString() + " rounds")
+
+    val users = ArrayList<User>(2)
+    users.add(User("Tom"))
+    users.add(User("Bot"))
+
+    helloUsers(users)
+
+    var results = ArrayList<Result>(100)
+
+    for (i in 1..round_limit) {
+        val itr: MutableIterator<User> = users.iterator()
+
+        roundWithTwoUsers(
+            Play(itr.next(), Action("ROCK")),
+            Play(itr.next(), Action("")),
+            results
+        )
+    }
+
+    printResults(results);
+
+    println("::::: GAME OVER : Rock, Paper, Scissors ::::::")
 }
 
