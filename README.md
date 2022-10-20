@@ -31,6 +31,10 @@ If you'd like to make changes and run all the tests...
 ```
 
 
+## Code
+
+[rock_paper_scissors/Main.kt at main](https://github.com/tom-sapletta-com/rock_paper_scissors/blob/main/src/main/kotlin/Main.kt)
+
 ```
 GameHumanBot(
     Config(
@@ -86,208 +90,109 @@ https://ktor.io/docs/getting-started-ktor-client.html#prerequisites
 
 
 ## Example
-    
-    GAME: Rock, Paper, Scissors
-    Program arguments:
+            
+    ::::: START GAME : Rock, Paper, Scissors ::::::
     Hello Tom !
     Hello Bot !
-    1 Tom: ROCK vs Bot: PAPER
-    Bot won
-    2 Tom: ROCK vs Bot: PAPER
-    Bot won
-    3 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    4 Tom: ROCK vs Bot: ROCK
-    Draw
-    5 Tom: ROCK vs Bot: PAPER
-    Bot won
-    6 Tom: ROCK vs Bot: PAPER
-    Bot won
-    7 Tom: ROCK vs Bot: ROCK
-    Draw
-    8 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    9 Tom: ROCK vs Bot: PAPER
-    Bot won
-    10 Tom: ROCK vs Bot: PAPER
-    Bot won
-    11 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    12 Tom: ROCK vs Bot: PAPER
-    Bot won
-    13 Tom: ROCK vs Bot: ROCK
-    Draw
-    14 Tom: ROCK vs Bot: PAPER
-    Bot won
-    15 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    16 Tom: ROCK vs Bot: PAPER
-    Bot won
-    17 Tom: ROCK vs Bot: ROCK
-    Draw
-    18 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    19 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    20 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    21 Tom: ROCK vs Bot: ROCK
-    Draw
-    22 Tom: ROCK vs Bot: ROCK
-    Draw
-    23 Tom: ROCK vs Bot: ROCK
-    Draw
-    24 Tom: ROCK vs Bot: PAPER
-    Bot won
-    25 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    26 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    27 Tom: ROCK vs Bot: PAPER
-    Bot won
-    28 Tom: ROCK vs Bot: PAPER
-    Bot won
-    29 Tom: ROCK vs Bot: ROCK
-    Draw
-    30 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    31 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    32 Tom: ROCK vs Bot: ROCK
-    Draw
-    33 Tom: ROCK vs Bot: ROCK
-    Draw
-    34 Tom: ROCK vs Bot: PAPER
-    Bot won
-    35 Tom: ROCK vs Bot: PAPER
-    Bot won
-    36 Tom: ROCK vs Bot: ROCK
-    Draw
-    37 Tom: ROCK vs Bot: ROCK
-    Draw
-    38 Tom: ROCK vs Bot: PAPER
-    Bot won
-    39 Tom: ROCK vs Bot: PAPER
-    Bot won
-    40 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    41 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    42 Tom: ROCK vs Bot: ROCK
-    Draw
-    43 Tom: ROCK vs Bot: PAPER
-    Bot won
-    44 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    45 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    46 Tom: ROCK vs Bot: PAPER
-    Bot won
-    47 Tom: ROCK vs Bot: PAPER
-    Bot won
-    48 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    49 Tom: ROCK vs Bot: PAPER
-    Bot won
-    50 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    51 Tom: ROCK vs Bot: PAPER
-    Bot won
-    52 Tom: ROCK vs Bot: ROCK
-    Draw
-    53 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    54 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    55 Tom: ROCK vs Bot: PAPER
-    Bot won
-    56 Tom: ROCK vs Bot: PAPER
-    Bot won
-    57 Tom: ROCK vs Bot: ROCK
-    Draw
-    58 Tom: ROCK vs Bot: PAPER
-    Bot won
-    59 Tom: ROCK vs Bot: ROCK
-    Draw
-    60 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    61 Tom: ROCK vs Bot: PAPER
-    Bot won
-    62 Tom: ROCK vs Bot: PAPER
-    Bot won
-    63 Tom: ROCK vs Bot: ROCK
-    Draw
-    64 Tom: ROCK vs Bot: PAPER
-    Bot won
-    65 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    66 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    67 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    68 Tom: ROCK vs Bot: PAPER
-    Bot won
-    69 Tom: ROCK vs Bot: ROCK
-    Draw
-    70 Tom: ROCK vs Bot: PAPER
-    Bot won
-    71 Tom: ROCK vs Bot: PAPER
-    Bot won
-    72 Tom: ROCK vs Bot: ROCK
-    Draw
-    73 Tom: ROCK vs Bot: PAPER
-    Bot won
-    74 Tom: ROCK vs Bot: PAPER
-    Bot won
-    75 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    76 Tom: ROCK vs Bot: PAPER
-    Bot won
-    77 Tom: ROCK vs Bot: ROCK
-    Draw
-    78 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    79 Tom: ROCK vs Bot: ROCK
-    Draw
-    80 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    81 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    82 Tom: ROCK vs Bot: ROCK
-    Draw
-    83 Tom: ROCK vs Bot: ROCK
-    Draw
-    84 Tom: ROCK vs Bot: PAPER
-    Bot won
-    85 Tom: ROCK vs Bot: ROCK
-    Draw
-    86 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    87 Tom: ROCK vs Bot: ROCK
-    Draw
-    88 Tom: ROCK vs Bot: PAPER
-    Bot won
-    89 Tom: ROCK vs Bot: PAPER
-    Bot won
-    90 Tom: ROCK vs Bot: PAPER
-    Bot won
-    91 Tom: ROCK vs Bot: ROCK
-    Draw
-    92 Tom: ROCK vs Bot: SCISSOR
-    Tom won
-    93 Tom: ROCK vs Bot: PAPER
-    Bot won
-    94 Tom: ROCK vs Bot: PAPER
-    Bot won
-    95 Tom: ROCK vs Bot: ROCK
-    Draw
-    96 Tom: ROCK vs Bot: ROCK
-    Draw
-    97 Tom: ROCK vs Bot: ROCK
-    Draw
-    98 Tom: ROCK vs Bot: ROCK
-    Draw
-    99 Tom: ROCK vs Bot: ROCK
-    Draw
-    100 Tom: ROCK vs Bot: ROCK
-    Draw
+    GAME with 100 rounds
+    1 Tom: ROCK Bot: SCISSOR = Tom won
+    2 Tom: ROCK Bot: ROCK = Draw
+    3 Tom: ROCK Bot: PAPER = Bot won
+    4 Tom: ROCK Bot: SCISSOR = Tom won
+    5 Tom: ROCK Bot: SCISSOR = Tom won
+    6 Tom: ROCK Bot: SCISSOR = Tom won
+    7 Tom: ROCK Bot: PAPER = Bot won
+    8 Tom: ROCK Bot: PAPER = Bot won
+    9 Tom: ROCK Bot: PAPER = Bot won
+    10 Tom: ROCK Bot: SCISSOR = Tom won
+    11 Tom: ROCK Bot: SCISSOR = Tom won
+    12 Tom: ROCK Bot: ROCK = Draw
+    13 Tom: ROCK Bot: SCISSOR = Tom won
+    14 Tom: ROCK Bot: ROCK = Draw
+    15 Tom: ROCK Bot: ROCK = Draw
+    16 Tom: ROCK Bot: PAPER = Bot won
+    17 Tom: ROCK Bot: PAPER = Bot won
+    18 Tom: ROCK Bot: ROCK = Draw
+    19 Tom: ROCK Bot: ROCK = Draw
+    20 Tom: ROCK Bot: SCISSOR = Tom won
+    21 Tom: ROCK Bot: SCISSOR = Tom won
+    22 Tom: ROCK Bot: ROCK = Draw
+    23 Tom: ROCK Bot: ROCK = Draw
+    24 Tom: ROCK Bot: SCISSOR = Tom won
+    25 Tom: ROCK Bot: PAPER = Bot won
+    26 Tom: ROCK Bot: PAPER = Bot won
+    27 Tom: ROCK Bot: PAPER = Bot won
+    28 Tom: ROCK Bot: PAPER = Bot won
+    29 Tom: ROCK Bot: ROCK = Draw
+    30 Tom: ROCK Bot: PAPER = Bot won
+    31 Tom: ROCK Bot: ROCK = Draw
+    32 Tom: ROCK Bot: SCISSOR = Tom won
+    33 Tom: ROCK Bot: SCISSOR = Tom won
+    34 Tom: ROCK Bot: ROCK = Draw
+    35 Tom: ROCK Bot: SCISSOR = Tom won
+    36 Tom: ROCK Bot: ROCK = Draw
+    37 Tom: ROCK Bot: PAPER = Bot won
+    38 Tom: ROCK Bot: ROCK = Draw
+    39 Tom: ROCK Bot: SCISSOR = Tom won
+    40 Tom: ROCK Bot: SCISSOR = Tom won
+    41 Tom: ROCK Bot: SCISSOR = Tom won
+    42 Tom: ROCK Bot: ROCK = Draw
+    43 Tom: ROCK Bot: ROCK = Draw
+    44 Tom: ROCK Bot: ROCK = Draw
+    45 Tom: ROCK Bot: PAPER = Bot won
+    46 Tom: ROCK Bot: ROCK = Draw
+    47 Tom: ROCK Bot: SCISSOR = Tom won
+    48 Tom: ROCK Bot: SCISSOR = Tom won
+    49 Tom: ROCK Bot: SCISSOR = Tom won
+    50 Tom: ROCK Bot: PAPER = Bot won
+    51 Tom: ROCK Bot: PAPER = Bot won
+    52 Tom: ROCK Bot: PAPER = Bot won
+    53 Tom: ROCK Bot: ROCK = Draw
+    54 Tom: ROCK Bot: ROCK = Draw
+    55 Tom: ROCK Bot: ROCK = Draw
+    56 Tom: ROCK Bot: ROCK = Draw
+    57 Tom: ROCK Bot: ROCK = Draw
+    58 Tom: ROCK Bot: SCISSOR = Tom won
+    59 Tom: ROCK Bot: ROCK = Draw
+    60 Tom: ROCK Bot: SCISSOR = Tom won
+    61 Tom: ROCK Bot: SCISSOR = Tom won
+    62 Tom: ROCK Bot: SCISSOR = Tom won
+    63 Tom: ROCK Bot: PAPER = Bot won
+    64 Tom: ROCK Bot: SCISSOR = Tom won
+    65 Tom: ROCK Bot: PAPER = Bot won
+    66 Tom: ROCK Bot: PAPER = Bot won
+    67 Tom: ROCK Bot: ROCK = Draw
+    68 Tom: ROCK Bot: PAPER = Bot won
+    69 Tom: ROCK Bot: SCISSOR = Tom won
+    70 Tom: ROCK Bot: PAPER = Bot won
+    71 Tom: ROCK Bot: ROCK = Draw
+    72 Tom: ROCK Bot: SCISSOR = Tom won
+    73 Tom: ROCK Bot: SCISSOR = Tom won
+    74 Tom: ROCK Bot: SCISSOR = Tom won
+    75 Tom: ROCK Bot: SCISSOR = Tom won
+    76 Tom: ROCK Bot: SCISSOR = Tom won
+    77 Tom: ROCK Bot: SCISSOR = Tom won
+    78 Tom: ROCK Bot: ROCK = Draw
+    79 Tom: ROCK Bot: SCISSOR = Tom won
+    80 Tom: ROCK Bot: SCISSOR = Tom won
+    81 Tom: ROCK Bot: SCISSOR = Tom won
+    82 Tom: ROCK Bot: SCISSOR = Tom won
+    83 Tom: ROCK Bot: PAPER = Bot won
+    84 Tom: ROCK Bot: ROCK = Draw
+    85 Tom: ROCK Bot: PAPER = Bot won
+    86 Tom: ROCK Bot: ROCK = Draw
+    87 Tom: ROCK Bot: ROCK = Draw
+    88 Tom: ROCK Bot: PAPER = Bot won
+    89 Tom: ROCK Bot: PAPER = Bot won
+    90 Tom: ROCK Bot: PAPER = Bot won
+    91 Tom: ROCK Bot: PAPER = Bot won
+    92 Tom: ROCK Bot: SCISSOR = Tom won
+    93 Tom: ROCK Bot: PAPER = Bot won
+    94 Tom: ROCK Bot: PAPER = Bot won
+    95 Tom: ROCK Bot: ROCK = Draw
+    96 Tom: ROCK Bot: SCISSOR = Tom won
+    97 Tom: ROCK Bot: PAPER = Bot won
+    98 Tom: ROCK Bot: PAPER = Bot won
+    99 Tom: ROCK Bot: PAPER = Bot won
+    100 Tom: ROCK Bot: SCISSOR = Tom won
+    ::::: GAME OVER : Rock, Paper, Scissors ::::::

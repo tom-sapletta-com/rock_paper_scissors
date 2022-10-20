@@ -85,15 +85,14 @@ fun printResults(results: ArrayList<Result>) {
 fun main() {
     println("::::: START GAME : Rock, Paper, Scissors ::::::")
 
-    val round_limit = 100
-
-    println(round_limit.toString() + " rounds")
-
     val users = ArrayList<User>(2)
     users.add(User("Tom"))
     users.add(User("Bot"))
 
     helloUsers(users)
+
+    val round_limit = 100
+    println("GAME with " + round_limit.toString() + " rounds")
 
     var results = ArrayList<Result>(100)
 
