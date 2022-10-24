@@ -27,6 +27,8 @@ Run all the tests...
 ./gradlew test --info
 ```
 
+[test result](test.html)
+
 ## Run app
 ```bash
 ./gradlew run
