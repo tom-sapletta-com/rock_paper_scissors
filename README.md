@@ -1,4 +1,4 @@
-# [tom-sapletta-com/rock_paper_scissors](https://github.com/tom-sapletta-com/rock_paper_scissors)
+# [Github: tom-sapletta-com/rock_paper_scissors](https://github.com/tom-sapletta-com/rock_paper_scissors)
 
 + [Webpage](https://tom-sapletta-com.github.io/rock_paper_scissors)
 
